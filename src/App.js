@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Form from './components/formEmail/form.component';
+import logo from './assets/images/logo.svg';
+import chart from './assets/images/illustration-dashboard.png';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='header_container'>
+        <img src={logo} alt="logo" />
+        <h1>We are launching <b>Soon!</b></h1>
+        <span>Subscribe and get notified</span>
+      </div>
+    <Form/>
+      <div className='img_container'>
+        <img src={chart} alt="chart"/>
+      </div>
+      <div className='footer_container'>
+        <div>
+          <i className="fa-brands fa-facebook-f"></i>
+          <i className="fa-brands fa-twitter"></i>
+          <i className="fa-brands fa-instagram"></i>
+        </div>
+        <h6>©Copyright Ping. All rights Reserved.</h6>
+      </div>
     </div>
   );
 }

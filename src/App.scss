@@ -1,0 +1,89 @@
+.App{
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.header_container{
+    text-align: center;
+    margin-bottom: 3em;
+    h1{
+        font-weight: 300;
+        color: hsl(0, 0%, 59%);
+        letter-spacing: 1px;
+        b{
+            color: black;
+        }
+    }
+    img{
+        margin-bottom: 2em;
+    }
+}
+.img_container{
+    width: 60%;
+    margin: auto;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h6{
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        color: hsl(0, 0%, 59%);
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 1em;
+        i{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            color: hsl(223, 87%, 63%);
+            border-radius: 100%;
+            box-shadow: 0px 3px 10px;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            -ms-border-radius: 100%;
+            -o-border-radius: 100%;
+            cursor: pointer;
+}
+    }
+}
+@media screen and (max-width:1000px){
+    .App{
+        width: 100%;
+        gap: 50px;
+        justify-content: flex-start;
+        height: fit-content;
+        padding: 4em 0.5em;
+    }
+    .img_container{
+        width: 80%;
+        margin: auto;
+        img{
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+@media screen and (max-width:550px){
+    .img_container{
+        width: 95%;
+    }
+}
